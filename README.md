@@ -123,17 +123,26 @@ This pattern is based loosely on the canvas and editor layout featured in Voicef
 When a document is active the associated editor should be visible and when no document is active
 the editor should be hidden. The layout of the documents changes based on whether the editor is visible.
 
+<img width="1009" alt="Screenshot 2023-03-07 at 6 50 49 PM" src="https://user-images.githubusercontent.com/3784470/223581981-7e8a422e-3881-4de7-99f3-d0bbfbcee600.png">
+<img width="1000" alt="Screenshot 2023-03-07 at 6 50 59 PM" src="https://user-images.githubusercontent.com/3784470/223581997-dcec16db-1be7-4329-975e-32d4df900027.png">
+
 #### Requirements
 
+- Uses the provided `DocumentCard` and `DocumentEditor` components
+  - these components can be wrapped to apply any necessary styling
 - Accepts a prop to control the list of documents being displayed
   - documentation examples can use the `DOCUMENTS` array from the `__stdlib` module
+- Must keep the state of which document is active
+  - The active document should have some recognizable styling
 - When a `DocumentCard` is clicked the editor slides in (if it isn't already)
-  - the appropriate document should be displayed in the editor
+  - the active document should be displayed in the editor
   - when the space between the cards is clicked the editor should close
 - The number of cards per row should changed depending on whether the editor is visible
   - when the editor is open there should be 3 cards per row
   - when the editor is closed there should be 4 cards per row
 - The editor should slide in and out from the right-hand side of the screen
+- Cards should all have the same height and width
+- Cards should be evenly spaced in document explorer
 
 ## Tips 📝
 
