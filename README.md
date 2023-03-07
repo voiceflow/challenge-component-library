@@ -31,9 +31,9 @@ To reduce the scope of this challenge some things have already been setup for yo
 encourage you to change anything that isn't explicitly listed as a requirement.
 [React](https://reactjs.org/), [TypeScript](https://www.typescriptlang.org/) and
 [ESLint](https://eslint.org/) have already been installed and configured for this repository.
-There is also a lightweight storybook alternative called [Ladle](https://ladle.dev/) setup,
+There is also a lightweight Storybook alternative called [Ladle](https://ladle.dev/) setup,
 however it was only chosen to keep this template simple and is not a required technology choice
-(feel free to replace this with storybook or any other tool you prefer).
+(feel free to replace this with Storybook or any other tool you prefer).
 
 ## Overview ℹ️
 
@@ -46,7 +46,7 @@ left entirely to your discretion.
 We also expect you to choose tools and patterns to effectively test the components
 you will be creating for this challenge.
 You may also want to replace our component documentation solution (Ladle) with
-storybook or another alternative depending on the features you want to leverage when documenting.
+Storybook or another alternative depending on the features you want to leverage when documenting.
 You should prepare to defend all choices made about technology and tools used in your implementation.
 
 In addition to the foundation there are three components that must be implemented:
@@ -57,7 +57,7 @@ In addition to the foundation there are three components that must be implemente
 
 We will be looking for strong, repeatable and consistent patterns that can be
 composed to implement a larger and more complex design system, such as the one used at Voiceflow.
-Imagine that this component library and the patterns used to create it will need to be learned
+Keep in mind that this component library and the patterns used to create it will need to be learned
 and used by multiple other teams, so they should be intuitive and scale to be used on hundreds of components.
 
 Feel free to modify the code in this repository as much as you want
@@ -65,15 +65,17 @@ Feel free to modify the code in this repository as much as you want
 
 ## Requirements ✅
 
-- The `build` script in `package.json` should create an asset that can be published to `npm`
-- The `dev` script in `package.json` should run a hot-reload dev server for the component documentation
-- Files should be organized with a directory structure that could scale to 100+ components
-- Choose a styling solution and use it to add styles to the components you implement
-- Your components should be tested with your choice of testing tools
+- [x] A component library built using `React` and `TypeScript`
+- [x] The `build` script in `package.json` should create an asset that can be published to `npm`
+- [x] The `dev` script in `package.json` should run a hot-reload dev server for the component documentation
+- [ ] Files should be organized with a directory structure that could scale to 100+ components
+- [ ] Choose a styling solution and use it to add styles to the components you implement
+- [ ] Your components should be tested with your choice of testing tools
+
   - the type of tests, number of tests and what is tested are up to you
-- Your components should be documented using either Ladle or the tool of your choice
+- [ ] Your components should be documented using either Ladle or the tool of your choice
   - the scope and details of this documentation are up to you
-- Implement the `Button`, `Image` and `DocumentManager` components as per their requirements
+- [ ] Implement the `Button`, `Image` and `DocumentManager` components as per their requirements
 
 ### Button Component
 
@@ -82,7 +84,7 @@ includes interactivity states.
 
 **Design Asset**: <https://www.figma.com/file/e1V5isQ4fOSNGOQ5ckgPBx/Buttons?node-id=0%3A1&t=JJhcZKErMeOyCRtH-1>
 
-**Requirements**
+#### Requirements
 
 - Able to configure the button label
 - Matches the designs provided
@@ -100,11 +102,13 @@ This component has 3 variants:
   - `height: 50px`
 - `round`
   - image should be cropped to a circle
+  - `height: 80px`
+  - `width: 80px`
 - `hero`
   - fill width of container
-  `height: 120px`
+  - `height: 120px`
 
-**Requirements**
+#### Requirements
 
 - Accepts a prop to control the image being displayed
 - Able to select the variant being used
@@ -112,14 +116,14 @@ This component has 3 variants:
 ### Document Manager Component
 
 > For this you will be using the data and components in the provided `__stdlib` module.
-> Specifically `DOCUMENTS`, `DocumentCard` and `DocumentEditor`.
+> Specifically `Document`, `DOCUMENTS`, `DocumentCard` and `DocumentEditor`.
 
 The goal for this component is to create a compound component that renders a simplified document explorer and editor.
 This pattern is based loosely on the canvas and editor layout featured in Voiceflow's design tool.
 When a document is active the associated editor should be visible and when no document is active
 the editor should be hidden. The layout of the documents changes based on whether the editor is visible.
 
-**Requirements**
+#### Requirements
 
 - Accepts a prop to control the list of documents being displayed
   - documentation examples can use the `DOCUMENTS` array from the `__stdlib` module
