@@ -144,6 +144,7 @@ Unless you get fancy and go off the rails (which isn't a bad thing 👍) this pr
 - make modular, self-describing, and composable components
 - consider the readability, maintainability of your code
 - record all assumptions made
+- keep tests and documentation focused
 
 ## Submission 📬
 
